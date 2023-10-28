@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body {
+    min-height: 200vh;
+}
+.white {
+    background-color: #F3F3F3;
+   float: left;
+   height: 800px;
+   width: 700px;
+}
+.white h1 {
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#A82429 ;
+    margin-top: 10%;
+    margin-left: 10%;
+    letter-spacing: 20px;
+}
+.white h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 80;
+    font-size: 38px;
+    margin-left: 75px;
+    margin-top: 10px;
+}
+.white p {
+    color: #7F7F7F;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 8px;
+    margin-left: 75px;
+}
+.white img {
+    padding: 0;
+    margin: 0;
+    margin-top: 0px;
+    float: right;
+}
+.random a {
+font-family: Arial, Helvetica, sans-serif;
+color: #161614d0;
+text-decoration: none;
+margin: 100px 80px 100px;
+padding: 100px 80px 100px;
+
+  
+}
+.random a:hover {
+color: #171717;
+background-color: white;
+background-size: 50px 60px;
+
+}
+.white img {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 490px;
+    height: 400px;
+    object-fit: cover;
+}
+.red {
+    background-color: #A82429;
+    float: left;
+   height: 600px;
+   width: 280px;
+}
+.red p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: white;
+    line-height: 1.5;
+   margin-top: 210px;
+   margin-left: 60px;
+}
+.black {
+    background-color: #161614d0;
+    position: absolute;
+    top: 400px;
+    right: 300px;
+    width: 280px;
+    height: 400px;
+}
+.gray {
+    background-color: #FAFAFA;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 320px;  
+}
+.darkgray {
+    background-color: #3F3B3C;
+    position: absolute;
+    top: 340px;
+    right: 0px;
+    width: 300px;
+    height: 460px;  
+}
+.darkgray h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: 400;
+    margin-top: 110px;
+    margin-left: 40px;
+    font-size: 27px;
+}
+.darkgray p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F3F3F3;
+    font-weight: 100;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+    .header {
+        grid-area: hd;
+}
+.secondpart {
+    background-color: #a2d2ff;
+font-size: 30;
+display: grid;
+
+}
+
