@@ -48,12 +48,18 @@ body {
 }
 .list {
     padding-top: 35%;
-    padding-left: 8%;
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-content: space-around;
 } 
-li {
-    list-style-type: none;
 
+.child{
+    margin-left: auto;
+    padding-top:1rem ;
 }
+
 .first-undertitle a{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
@@ -62,12 +68,10 @@ li {
     text-decoration: none;
     
 }
-.list a:hover {
+ .child:hover {
     color:#171717;
     background-color: #FFFFFF;
-    transition: background-color 0.4s;
-    padding-left: 0%;
-    padding: 1% 2% 1% 11%;
+    margin-left: auto;
 }
 .icons {
     height: 20vh;

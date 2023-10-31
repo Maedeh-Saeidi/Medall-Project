@@ -70,8 +70,7 @@ li {
     color:#171717;
     background-color: #FFFFFF;
     transition: background-color 0.4s;
-    padding-left: 0%;
-    padding: 1% 2% 1% 11%;
+   
 }
 .icons {
     height: 20vh;
@@ -190,14 +189,14 @@ margin: 0px;
     
 
 }
-.title h1 {
+.thirdpage-title h1 {
 font-family: Arial, Helvetica, sans-serif;
 font-size: 50px;
 padding-top: 5%;
 padding-left: 38%;
 
 }
-.title h2{
+.thirdpage-title h2{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
     font-weight: 300;
@@ -205,39 +204,66 @@ padding-left: 38%;
     padding-top: 0%;
 padding-left: 41%;
 }
-.thirspage-items{
+.thirdpage-secondpart {
+    height:70vh ;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    padding-top: 4%;
-
+    justify-content: space-around;
+    padding-top: 10%;
+    padding-left: 5%;
+    padding-right: 5%;
 }
-/* .items {
+.first-div {
+    height: 50vh;
+    background-color: #f3f3f3;
+    width: 30%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    background-color: #F3F3F3;
-    height: 55vh;
-    width: 50%;
-    margin: 3%;
-    text-align: center;
+    flex-direction: column;
+   justify-content: center;
+    align-items: center;
+}
+.first-div a {
+    text-decoration: none;
+}
+.first-div h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 30px;
+    padding-bottom: 40%;
     
-
 }
-.itemone {
-
-} */
-/* .itemone img{
-    width: 40%;
-    padding-bottom: 0%;
+.first-div img {
+    padding-left: 4%;
 }
-.items a{
- text-decoration: none;
- color: #000000;
-   
+.second-div {
+    height: 50vh;
+    background-color: #f3f3f3;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-.items h1 {
-    padding-bottom: 25%;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 30px;
-} */
+.second-div h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000000;
+    font-size: 27px;
+   padding-top: 10%;
+}
+.second-div img {
+    padding-top: 30%;
+    padding-left: 20%;
+}
+.second-div a{
+    text-decoration: none;
+}
+.third-div {
+    height: 50vh;
+    background-color: #f3f3f3;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.third-div a{
+    text-decoration: none;
+}
