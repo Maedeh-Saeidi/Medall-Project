@@ -183,6 +183,8 @@ li {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 50px;
   padding-top: 5%;
+  margin: auto;
+  text-align: center;
 }
 .thirdpage-title h2 {
   font-family: Arial, Helvetica, sans-serif;
@@ -190,6 +192,8 @@ li {
   font-weight: 300;
   color: #f3f3f3;
   padding-top: 0%;
+  margin: auto;
+  text-align: center;
 }
 .thirdpage-secondpart {
   height: 60vh;
@@ -296,6 +300,7 @@ li {
   font-size: 40px;
   color: #000000;
   padding-top: 10%;
+  padding-left: 5%;
 }
 .button-fourth {
   padding-top: 13%;
