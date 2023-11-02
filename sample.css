@@ -508,7 +508,7 @@ justify-content: center;
 .medall {
 flex: 10%;
 font-family: Arial, Helvetica, sans-serif;
-font-size: 14px;
+font-size: 20px;
 color: #404040;
 display: flex;
 align-items: center;
@@ -517,12 +517,12 @@ justify-items: center;
 .medall a {
   text-decoration: none;
   color: #404040;
-  font-weight: 400;
+  font-weight: 520;
 }
 .home {
   flex: 10%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-size: 20px;
 color: #404040;
 display: flex;
 align-items: center;
@@ -531,12 +531,12 @@ justify-items: center;
 .home a{
   text-decoration: none;
   color: #404040;
-  font-weight: 400;
+  font-weight: 520;
 }
 .services {
   flex: 10%;
   font-family: Arial, Helvetica, sans-serif;
-font-size: 13px;
+font-size: 20px;
 color: #404040;
 display: flex;
 align-items: center;
@@ -545,12 +545,12 @@ justify-items: center;
 .services a{
   text-decoration: none;
   color: #404040;
-  font-weight: 400;
+  font-weight: 520;
 }
 .about-us{
   flex: 10%;
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
+  font-size: 20px;
 color: #404040;
 display: flex;
 align-items: center;
@@ -559,8 +559,15 @@ justify-items: center;
 .about-us a{
   text-decoration: none;
   color: #404040;
-  font-weight: 400;
+  font-weight: 520;
 }
 .lastonesecondpart {
 flex: 40%;
+display: flex;
+align-items: center;
+justify-items: center;
+gap: 7%;
+}
+.blackyoutube {
+  padding-left: 50%;
 }
