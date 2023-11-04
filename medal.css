@@ -411,7 +411,7 @@ padding-top: 3rem;
 }
 .fourthpage-first {
   height: 100vh;
-  flex: 50%;
+  flex: 60%;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
@@ -423,7 +423,7 @@ padding-top: 3rem;
   font-size: 40px;
   color: #000000;
   padding-top: 10%;
-  padding-left: 5%;
+  padding-left: 0%;
 }
 .button-fourth {
   padding-top: 13%;
@@ -443,7 +443,7 @@ padding-top: 3rem;
 }
 .fourthpage-second {
   height: 100vh;
-  flex: 50%;
+  flex: 40%;
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -456,12 +456,20 @@ padding-top: 3rem;
   justify-content: center;
   background: #ffffff;
   height: 30vh;
+  position: relative;
   /* padding-bottom:20% ; */
 }
-
+.laptop {
+  z-index: -1;
+}
+.phone {
+  padding-top: 3rem;
+position: absolute;
+padding-right: 20rem;
+}
 .parent {
   margin-bottom: 1%;
-  position: relative;
+
   background-color: #ffffff;
 }
 @media screen and (max-width: 480px) {
@@ -472,7 +480,8 @@ padding-top: 3rem;
     flex-direction: column-reverse;
   }
   .fourthpage-second {
-    padding-top: 12%;
+    padding-top: 10%;
+    padding-left: 5%;
   }
   .fourthpage img{
     width: 40;
@@ -480,14 +489,14 @@ padding-top: 3rem;
   
   .parent {
     margin-bottom: 1%;
-    padding-left: 5%;
+    padding-left: 7%;
     position: relative;
     background-color: #ffffff;
   }
   .phone {
     position: absolute;
-    top: 50px;
-    left: 250px;
+    top: 0px;
+    left: 230px;
     z-index: 1;
   }
   .title-fourth {
@@ -495,10 +504,15 @@ padding-top: 3rem;
     font-size: 50px;
     line-height: 50px;
   }
-  .button-fourth{
+  .button-fourth {
     padding-left: 15%;
     padding-bottom: 20%;
 
+  }
+  .fourthpage-first h1{
+    font-size: 40px;
+    line-height: 1.7;
+    padding-left: 5%;
   }
 }
 .fifthpage {
