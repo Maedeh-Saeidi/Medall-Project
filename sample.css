@@ -463,13 +463,13 @@ padding-top: 3rem;
   z-index: -1;
 }
 .phone {
-  padding-top: 3rem;
 position: absolute;
-padding-right: 20rem;
+z-index: 1;
+top: 4rem;
+left: 17rem;
 }
 .parent {
-  margin-bottom: 1%;
-
+padding-top: 4rem;
   background-color: #ffffff;
 }
 @media screen and (max-width: 480px) {
@@ -495,7 +495,7 @@ padding-right: 20rem;
   }
   .phone {
     position: absolute;
-    top: 0px;
+    top: 6rem;
     left: 230px;
     z-index: 1;
   }
