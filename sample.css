@@ -568,6 +568,7 @@ li {
   flex-direction: column;
 }
 .sixthpage-first {
+  flex: 30%;
   height: 30vh;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
@@ -579,6 +580,7 @@ li {
   padding-top: 8%;
 }
 .sixthpage-second {
+  flex: 30%;
   display: flex;
   flex-direction: row;
 }
@@ -634,7 +636,11 @@ li {
   padding-top: 2%;
   padding-left: 3%;
 }
+.form-part {
+  flex: 30%;
+}
 .lastone {
+  flex: 30%;
   height: 23vh;
   background-color: #a82429;
   display: flex;
@@ -726,7 +732,85 @@ li {
 }
 @media screen and (max-width: 480px) {
   .sixthpage {
-    
-  }
+    display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+}
+.sixthpage-first {
+  flex: 10%;
+}
+.sixthpage-first h1 {
+  padding-top:20%;
+  font-size: 50px;
+}
+.sixthpage-second {
+  flex: 10%;
+}
+.sixthpage-items{
+  padding-top: 15%;
+  padding-left: 2%;
+}
+.sixthpage-icons {
+  padding-top: 15%;
+  gap: 13%;
+  padding-left: 8%;
+}
+.location {
+  flex: 10%;
+  padding-bottom: 15%;
+  padding-left: 7%;
+}
+.location1 img{
+  width: 30%;
+  padding-bottom: 120%;
+
+}
+.location2 h3 {
+padding-left :5%;
+}
+.form-part {
+  flex: 10%;
+}
+.lastone {
+  flex: 10%;
+}
+.lastonecenterpart{
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  height: 30vh;
+
+}
+.lastonefirstpart {
+  display: flex;
+  flex-wrap: wrap;
 }
 
+.medall-icon{
+  flex: 20%;
+}
+.medall {
+  flex: 20%;
+  font-size: 25px;
+  padding-left: 5%;
+}
+.home {
+  flex: 20%;
+  font-size: 25px;
+  padding-left: 5%;
+}
+.services{
+  flex: 23%;
+  font-size: 25px;
+  padding-left: 10%;
+}
+.about-us {
+  flex: 23%;
+  font-size: 25px;
+}
+.lastonesecondpart {
+  justify-content: flex-end;
+  padding-right:4%;
+}
+}
