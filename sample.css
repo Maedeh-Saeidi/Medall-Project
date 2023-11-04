@@ -724,3 +724,9 @@ li {
 .blackyoutube {
   padding-left: 50%;
 }
+@media screen and (max-width: 480px) {
+  .sixthpage {
+    
+  }
+}
+
