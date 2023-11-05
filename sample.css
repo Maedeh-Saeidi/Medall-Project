@@ -218,8 +218,17 @@ li {
     padding-top: 10rem;
   }
 }
+@media screen and (max-width: 992px) and (min-width: 769px){
+  .secondpage {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+}
 .thirdpage {
   height: 100vh;
+  width: 100%;
   background-color: #9e9e9e;
   display: flex;
   flex-direction: column;
