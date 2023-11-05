@@ -948,3 +948,9 @@ padding-left :5%;
   padding-right:4%;
 }
 }
+@media screen and (max-width: 768px) and (min-width: 481px) {
+.location1 img{
+  width: 15%;
+
+}
+}
