@@ -655,8 +655,35 @@ padding-top: 4rem;
 }
 
 @media screen and (max-width: 768px) and (min-width: 481px){
+.fifthpage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
 
-
+}
+.fifthpage-first {
+ flex: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0%;
+  /* justify-content: flex-end; */
+}
+.fifthpage-second {
+  flex: 20%;
+  padding: 0%;
+  margin: 0%;
+}
+.fifthpage-third {
+  flex: 20%;
+  display: flex;
+  flex-direction: column;
+  padding: 0%;
+  margin: 0%;
+  /* justify-content: flex-start; */
+  
+}
 }
 
 .sixthpage {
