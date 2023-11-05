@@ -509,9 +509,13 @@ padding-top: 4rem;
     z-index: 1;
   }
   .title-fourth {
+    width: 25rem;
+    word-spacing: 7px;
     padding-bottom: 1%;
     font-size: 50px;
-    line-height: 50px;
+  }
+  .title-fourth h1{
+    line-height: 2px;
   }
   .button-fourth {
     padding-left: 15%;
@@ -539,13 +543,15 @@ padding-top: 4rem;
     flex: 50%;
   }
   .title-fourth h1{
-    padding-top: 9rem;
+    width: 19rem;
+    word-spacing: 6px;
+    padding-top: 10rem;
     padding-left: 3rem;
     font-size: 2rem;
   }
  .button-fourth {
   padding-left: 4rem;
-  padding-bottom: 6rem;
+  padding-bottom: 7rem;
  }
  .laptop {
   width: 23rem;
@@ -565,8 +571,6 @@ padding-top: 4rem;
   position: relative;
  }
 }
-
-
 .fifthpage {
   height: 100vh;
   display: flex;
@@ -649,6 +653,12 @@ padding-top: 4rem;
   }
  
 }
+
+@media screen and (max-width: 768px) and (min-width: 481px){
+
+
+}
+
 .sixthpage {
   height: 100vh;
   background-color: #a82429;
