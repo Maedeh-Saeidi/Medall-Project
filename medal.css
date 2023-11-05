@@ -217,12 +217,6 @@ li {
   .secondpage p{
     padding-top: 10rem;
   }
-  .thirdpage-secondpart {
-    display: flex;
-justify-content: space-evenly;
-align-items: center;
-    gap: 2rem;
-  }
 }
 .thirdpage {
   height: 100vh;
@@ -400,13 +394,19 @@ align-items: center;
     width: 150px;
   }
 }
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) and (min-width: 481px){
   .thirdpage {
     height: 100vh;
     width: 100%;
   }
 .thirdpage-title h1{
 padding-top: 3rem;
+}
+.thirdpage-secondpart {
+  display: flex;
+justify-content: space-evenly;
+align-items: center;
+  gap: 2rem;
 }
 }
 .fourthpage {
@@ -533,23 +533,36 @@ padding-top: 4rem;
     flex-direction: row;
   }
   .fourthpage-first{
-    flex: 30%;
+    flex: 50%;
   }
   .fourthpage-second{
-    flex: 70%;
+    flex: 50%;
   }
   .title-fourth h1{
+    padding-top: 9rem;
+    padding-left: 3rem;
     font-size: 2rem;
-    padding-right: 4rem;
   }
  .button-fourth {
-  padding-right: 10rem;
+  padding-left: 4rem;
+  padding-bottom: 6rem;
  }
  .laptop {
-  width: 150%;
+  width: 23rem;
+
  }
  .fourthpage-second {
   padding-right: 5rem;
+ }
+ .phone {
+ width: 8rem;
+padding-top: 4rem;
+ position: absolute;
+ z-index: 1;
+ }
+ .parent {
+  padding-right: 30rem;
+  position: relative;
  }
 }
 
