@@ -2,8 +2,12 @@
   margin: 0;
   padding: 0;
 }
+/* html {
+  scroll-behavior: smooth;
+} */
 body {
   background-color: #f3f3f3;
+
 }
 @media screen and (max-width: 480px){
   .flex-container {
@@ -133,6 +137,10 @@ li {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: #cacaca;
+}
+.gray :hover{
+  cursor:  pointer;
+ transition: all 0.4s;
 }
 .second-secondcolumn {
   height: 100vh;

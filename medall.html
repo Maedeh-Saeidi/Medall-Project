@@ -1,6 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("a").on('click', function(event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+      var hash = this.hash;
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 1000, function(){
+        window.location.hash = hash;
+      });
+    }
+  });
+});
+</script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Maedeh-Saeidi">
@@ -10,7 +28,7 @@
   </head>
   <body>
     <div class="flex-container">
-      <div class="container">
+      <div class="container" id="Section1">
         <div class="first">
           <div class="first-title">
             <h1>MEDALL</h1>
@@ -21,8 +39,8 @@
           <div class="first-undertitle">
             <div class="list">
               <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">About</a></li>
+                <li><a href="#Section1">Home</a></li>
+                <li><a href="#Section6">About</a></li>
                 <li><a href="">Sign in</a></li>
               </ul>
             </div>
@@ -158,7 +176,7 @@
 
         </div>
       </div>
-      <div class="sixthpage">
+      <div class="sixthpage" id="Section6">
 
         <div class="sixthpage-first">
           <h1>Contact Us</h1>
@@ -206,7 +224,7 @@
                 </a>
               </div>
               <div class="home">
-                <a href="">
+                <a href="#Section1">
                   <p>Home</p>
                 </a>
               </div>
@@ -216,7 +234,7 @@
                 </a>
               </div>
               <div class="about-us">
-                <a href="">
+                <a href="#Section6">
                   <p>About Us</p>
                 </a>
               </div>
