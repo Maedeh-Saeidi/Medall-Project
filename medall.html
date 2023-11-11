@@ -18,7 +18,7 @@ $(document).ready(function(){
   });
 });
 </script>
-
+<script src="https://unpkg.com/scrollreveal@4"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Maedeh-Saeidi">
@@ -31,11 +31,14 @@ $(document).ready(function(){
       <div class="container" id="Section1">
         <div class="first">
           <div class="first-title">
-            <h1>MEDALL</h1>
+            <h1 class="header1">MEDALL</h1>
 
-            <h2>Medical and all</h2>
+            <h2 class="header2">Medical and all</h2>
           </div>
-
+          <script>
+            ScrollReveal().reveal('.header1') , { delay: 1000 };
+            ScrollReveal().reveal('.header2', { delay: 700 });
+          </script>
           <div class="first-undertitle">
             <div class="list">
               <ul>
@@ -132,6 +135,12 @@ $(document).ready(function(){
               </a>
             </div>
           </div>
+          <script>
+            ScrollReveal().reveal('.first-div', { delay: 500 });
+            ScrollReveal().reveal('.second-div', { delay: 700 });
+            ScrollReveal().reveal('.third-div', {delay:900});
+         </script>
+          
       </div>
       <div class="fourthpage">
         <div class="fourthpage-first">
@@ -148,6 +157,22 @@ $(document).ready(function(){
               <img src="images/laptop.svg" alt="" width="80%" class="laptop" >
               <img src="images/Group 339 1.svg" alt="" width="30%" class="phone">
             </div>
+            <script>
+              var reveal = {
+            distance: '1000px',
+            origin: 'right',
+            opacity: null,
+            delay:700
+        };
+        var reveal2 = {
+            distance: '900px',
+            origin: 'right',
+            opacity: null,
+            delay:900
+        };
+        ScrollReveal().reveal('.laptop', reveal);
+        ScrollReveal().reveal('.phone', reveal2);
+            </script>
           </div>
 
         </div>
@@ -176,6 +201,11 @@ $(document).ready(function(){
 
         </div>
       </div>
+      <script>
+          ScrollReveal().reveal('.fifthpage-first', { delay: 500 });
+            ScrollReveal().reveal('.fifthpage-second', { delay: 700 });
+            ScrollReveal().reveal('.fifthpage-third', {delay:900});
+      </script>
       <div class="sixthpage" id="Section6">
 
         <div class="sixthpage-first">
