@@ -742,9 +742,10 @@ padding-top: 4rem;
   flex: 30%;
   display: flex;
   flex-direction: row;
+
 }
 .sixthpage-icons {
-  flex: 23%;
+  flex: 15%;
   height: 20vh;
   display: flex;
   flex-direction: column;
@@ -777,7 +778,7 @@ padding-top: 4rem;
   /* background-color: green; */
 }
 .location1 {
-  flex: 23%;
+  flex: 16%;
   display: flex;
   justify-content: flex-end;
   padding-bottom: 7%;
@@ -918,10 +919,10 @@ padding-top: 4rem;
 .location {
   flex: 10%;
   padding-bottom: 15%;
-  padding-left: 7%;
+  padding-left: 1.2rem;
 }
 .location1 img{
-  width: 30%;
+  width: 40%;
   padding-bottom: 120%;
 
 }
@@ -975,7 +976,7 @@ padding-left :5%;
 }
 @media screen and (max-width: 768px) and (min-width: 481px) {
   .location1 img{
-    width: 15%;
+    width: 19%;
   
   }
   }
