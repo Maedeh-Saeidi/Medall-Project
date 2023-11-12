@@ -18,7 +18,9 @@ $(document).ready(function(){
   });
 });
 </script>
-<script src="https://unpkg.com/scrollreveal@4"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Maedeh-Saeidi">
@@ -27,6 +29,21 @@ $(document).ready(function(){
     <link rel="stylesheet" href="medal.css">
   </head>
   <body>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
+      let smoother = ScrollSmoother.create ({
+        wrapper: '#first',
+        content: '#second',
+        smooth: 2,
+        effects: true
+      })
+
+    </script>
     <div class="flex-container">
       <div class="container" id="Section1">
         <div class="first">
@@ -36,8 +53,10 @@ $(document).ready(function(){
             <h2 class="header2">Medical and all</h2>
           </div>
           <script>
-            ScrollReveal().reveal('.header1') , { delay: 1000 };
-            ScrollReveal().reveal('.header2', { delay: 700 });
+            gsap.to(".header1", {
+            scrollTrigger: ".header1", // start the animation when ".box" enters the viewport (once)
+            x: -20,
+          });
           </script>
           <div class="first-undertitle">
             <div class="list">
@@ -114,20 +133,20 @@ $(document).ready(function(){
            <div> <h2>3 simple steps</h2></div>
           </div>
           <div class="thirdpage-secondpart">
-            <div class="first-div">
+            <div class="first-div"  data-aos="zoom-out-down" data-aos-duration="800">
               <a href="">
                 <div style="margin: auto; text-align: center;"> <h1>Create <br>
                   an account</h1></div>
                 <div> <img src="images/1.svg" alt="" width="70%"></div>
               </a>
             </div>
-            <div class="second-div">
+            <div class="second-div"  data-aos="zoom-out-down" data-aos-duration="1000">
               <a href="">
                 <div style="margin: auto; text-align: center;"> <h1>Search or Create <br>a product</h1></div>
                 <div> <img src="images/2.svg" alt="" width="55%"></div>
               </a>
             </div>
-            <div class="third-div">
+            <div class="third-div"  data-aos="zoom-out-down" data-aos-duration="1200">
               <a href="">
                 <div style="margin: auto; text-align: center;"> <h1> Sell or <br>Rent</h1></div>
                 <div class="image1"> <img src="images/3.svg" alt="" width="70%">
@@ -135,12 +154,6 @@ $(document).ready(function(){
               </a>
             </div>
           </div>
-          <script>
-            ScrollReveal().reveal('.first-div', { delay: 500 });
-            ScrollReveal().reveal('.second-div', { delay: 700 });
-            ScrollReveal().reveal('.third-div', {delay:900});
-         </script>
-          
       </div>
       <div class="fourthpage">
         <div class="fourthpage-first">
@@ -154,46 +167,30 @@ $(document).ready(function(){
         <div class="fourthpage-second">
           <div class="imagee1">
             <div class="parent">
-              <img src="images/laptop.svg" alt="" width="80%" class="laptop" >
-              <img src="images/Group 339 1.svg" alt="" width="30%" class="phone">
+              <img src="images/laptop.svg" alt="" width="80%" class="laptop" data-aos="fade-left" data-aos-duration="600" data-aos-easing="linear">
+              <img src="images/Group 339 1.svg" alt="" width="30%" class="phone" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
             </div>
-            <script>
-              var reveal = {
-            distance: '1000px',
-            origin: 'right',
-            opacity: null,
-            delay:700
-        };
-        var reveal2 = {
-            distance: '900px',
-            origin: 'right',
-            opacity: null,
-            delay:900
-        };
-        ScrollReveal().reveal('.laptop', reveal);
-        ScrollReveal().reveal('.phone', reveal2);
-            </script>
           </div>
 
         </div>
       </div>
 
       <div class="fifthpage">
-        <div class="fifthpage-first">
+        <div class="fifthpage-first"  data-aos="zoom-out-down" data-aos-duration="800">
 
           <div class="circle"> <img src="" alt=""></div>
           <div style="  text-align: center;"> <h2>Mohammad Sharifi</h2></div>
           <div style="  text-align: center;"><h3>Manager</h3></div>
 
         </div>
-        <div class="fifthpage-second">
+        <div class="fifthpage-second"  data-aos="zoom-out-down" data-aos-duration="1000">
 
           <div class="circle"> <img src="" alt=""></div>
           <div style="  text-align: center;"> <h2>Mohammad Sharifi</h2></div>
           <div style="  text-align: center;"><h3>Manager</h3></div>
 
         </div>
-        <div class="fifthpage-third">
+        <div class="fifthpage-third"  data-aos="zoom-out-down" data-aos-duration="1200">
 
           <div class="circle"> <img src="" alt=""></div>
           <div  style="  text-align: center;"> <h2>Mohammad Sharifi</h2> </div>
@@ -201,11 +198,6 @@ $(document).ready(function(){
 
         </div>
       </div>
-      <script>
-          ScrollReveal().reveal('.fifthpage-first', { delay: 500 });
-            ScrollReveal().reveal('.fifthpage-second', { delay: 700 });
-            ScrollReveal().reveal('.fifthpage-third', {delay:900});
-      </script>
       <div class="sixthpage" id="Section6">
 
         <div class="sixthpage-first">
