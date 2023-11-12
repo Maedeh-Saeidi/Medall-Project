@@ -37,10 +37,10 @@ body {
 }
 .first-title h1 {
   font-family: Arial, Helvetica, sans-serif;
-  font-size: 110px;
+  font-size: 100px;
   color: #a82429;
   padding-top: 5%;
-  padding-left: 8%;
+  padding-left: 4rem;
   letter-spacing: 20px;
 }
 .first-title h2 {
@@ -49,7 +49,7 @@ body {
   font-weight: 80;
   color: #000000;
   padding-top: 0%;
-  padding-left: 8%;
+  padding-left: 3rem;
 }
 .first-undertitle {
   height: 65vh;
@@ -58,17 +58,21 @@ body {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
+  position: relative;
 }
 .list {
-  padding-top: 35%;
+  position: absolute;
+  padding-top: 2rem;
 }
 .list ul{
   display:flex;
   flex-direction: column;
   gap: 0.8rem;
+ 
 }
 li {
   list-style-type: none;
+  
 }
 .first-undertitle a {
   font-family: Arial, Helvetica, sans-serif;
@@ -94,14 +98,50 @@ li {
   flex-direction: row;
   justify-content: flex-start;
   align-items: flex-end;
-  padding-left: 3%;
-  padding-bottom: 4%;
+  padding-left: 3rem;
+  padding-top: 19rem;
+  gap: 0rem;
 }
 .social-icons {
   height: 20%;
-  width: 9%;
-  padding-bottom: 2%;
+  width: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
   margin: 0px;
+  
+}
+/* .social-icons a:hover{
+box-shadow: 3px 3px 50px gray;
+  transition: all 1.5s;
+} */
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+  }
+  .first-title {
+    height: 30vh;
+  }
+  .first-title h1 {
+    font-size: 75px;
+    padding-top: 4rem;
+    padding-right: 5rem;
+    padding-left: 2rem;
+    letter-spacing: 10px;
+  }
+  .first-title h2 {
+    padding-right: 5rem;
+    padding-left: 1rem;
+  }
+  .first-undertitle {
+height: 70vh;
+  }
 }
 .second {
   height: 100vh;
