@@ -366,6 +366,7 @@ li {
   }
   .first-div h1 {
     padding-bottom: 5%;
+    padding-right: 3rem;
   }
   .first-div a {
     display: flex;
@@ -376,11 +377,15 @@ li {
   .first-div img {
     width: 100px;
     padding-left: 0%;
+    padding-right: 1rem;
   }
   .second-div {
     width: 100%;
     height: 20vh;
     flex-direction: row;
+  }
+  .second-div h1{
+    padding-right: 1rem;
   }
   .second-div a {
     display: flex;
@@ -405,6 +410,7 @@ li {
   }
   .third-div h1 {
     padding-top: 20%;
+    padding-right: 1.5rem;
   }
   .image1 {
     height: 10vh;
@@ -534,9 +540,10 @@ padding-top: 4rem;
     z-index: 1;
   }
   .title-fourth {
-    width: 25rem;
+    width: 23rem;
     word-spacing: 7px;
     padding-bottom: 1%;
+    padding-left: 2rem;
     font-size: 50px;
   }
   .title-fourth h1{
@@ -549,7 +556,7 @@ padding-top: 4rem;
   }
   .fourthpage-first h1{
     font-size: 40px;
-    line-height: 1.7;
+    line-height: 1.3;
     padding-left: 5%;
   }
 }
