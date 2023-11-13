@@ -1,26 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("a").on('click', function(event) {
-    if (this.hash !== "") {
-      event.preventDefault();
-      var hash = this.hash;
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 1000, function(){
-        window.location.hash = hash;
+    <script>
+      $(document).ready(function () {
+        $("a").on("click", function (event) {
+          if (this.hash !== "") {
+            event.preventDefault();
+            var hash = this.hash;
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top,
+              },
+              1000,
+              function () {
+                window.location.hash = hash;
+              }
+            );
+          }
+        });
       });
-    }
-  });
-});
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Maedeh-Saeidi">
@@ -29,20 +32,18 @@ $(document).ready(function(){
     <link rel="stylesheet" href="medal.css">
   </head>
   <body>
-
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script>
-      gsap.registerPlugin(ScrollTrigger,ScrollSmoother);
-      let smoother = ScrollSmoother.create ({
-        wrapper: '#first',
-        content: '#second',
+      gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
+      let smoother = ScrollSmoother.create({
+        wrapper: "#first",
+        content: "#second",
         smooth: 2,
-        effects: true
-      })
-
+        effects: true,
+      });
     </script>
     <div class="flex-container">
       <div class="container" id="Section1">
@@ -54,9 +55,9 @@ $(document).ready(function(){
           </div>
           <script>
             gsap.to(".header1", {
-            scrollTrigger: ".header1", // start the animation when ".box" enters the viewport (once)
-            x: -20,
-          });
+              scrollTrigger: ".header1", // start the animation when ".box" enters the viewport (once)
+              x: -20,
+            });
           </script>
           <div class="first-undertitle">
             <div class="list">
@@ -123,37 +124,67 @@ $(document).ready(function(){
         </div>
       </div>
       <div class="thirdpage">
-          <div class="thirdpage-title">
-           <div><h1> How it Works</h1> </div>
-           <div> <h2>3 simple steps</h2></div>
+        <div class="thirdpage-title">
+          <div><h1>How it Works</h1></div>
+          <div><h2>3 simple steps</h2></div>
+        </div>
+        <div class="thirdpage-secondpart">
+          <div
+            class="first-div"
+            data-aos="zoom-out-down"
+            data-aos-duration="800"
+          >
+            <a href="">
+              <div style="margin: auto; text-align: center">
+                <h1>
+                  Create <br>
+                  an account
+                </h1>
+              </div>
+              <div><img src="images/1.svg" alt="" width="70%"></div>
+            </a>
           </div>
-          <div class="thirdpage-secondpart">
-            <div class="first-div"  data-aos="zoom-out-down" data-aos-duration="800">
-              <a href="">
-                <div style="margin: auto; text-align: center;"> <h1>Create <br>
-                  an account</h1></div>
-                <div> <img src="images/1.svg" alt="" width="70%"></div>
-              </a>
-            </div>
-            <div class="second-div"  data-aos="zoom-out-down" data-aos-duration="1000">
-              <a href="">
-                <div style="margin: auto; text-align: center;"> <h1>Search or Create <br>a product</h1></div>
-                <div> <img src="images/2.svg" alt="" width="55%"></div>
-              </a>
-            </div>
-            <div class="third-div"  data-aos="zoom-out-down" data-aos-duration="1200">
-              <a href="">
-                <div style="margin: auto; text-align: center;"> <h1> Sell or <br>Rent</h1></div>
-                <div class="image1"> <img src="images/3.svg" alt="" width="70%">
-                <img src="images/material-symbols_sell.svg" alt="" width="25%" class="image2"></div>
-              </a>
-            </div>
+          <div
+            class="second-div"
+            data-aos="zoom-out-down"
+            data-aos-duration="1000"
+          >
+            <a href="">
+              <div style="margin: auto; text-align: center">
+                <h1>Search or Create <br>a product</h1>
+              </div>
+              <div><img src="images/2.svg" alt="" width="55%"></div>
+            </a>
           </div>
+          <div
+            class="third-div"
+            data-aos="zoom-out-down"
+            data-aos-duration="1200"
+          >
+            <a href="">
+              <div style="margin: auto; text-align: center">
+                <h1>Sell or <br>Rent</h1>
+              </div>
+              <div class="image1">
+                <img src="images/3.svg" alt="" width="70%">
+                <img
+                  src="images/material-symbols_sell.svg"
+                  alt=""
+                  width="25%"
+                  class="image2"
+                >
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
       <div class="fourthpage">
         <div class="fourthpage-first">
           <div class="title-fourth">
-            <h1> Use Medall App On Your <br> Mobile Or Desktop.</h1>
+            <h1>
+              Use Medall App On Your <br>
+              Mobile Or Desktop.
+            </h1>
           </div>
           <div class="button-fourth">
             <button>Register Now!</button>
@@ -162,54 +193,74 @@ $(document).ready(function(){
         <div class="fourthpage-second">
           <div class="imagee1">
             <div class="parent">
-              <img src="images/laptop.svg" alt="" width="80%" class="laptop" data-aos="fade-left" data-aos-duration="600" data-aos-easing="linear">
-              <img src="images/Group 339 1.svg" alt="" width="30%" class="phone" data-aos="fade-left" data-aos-duration="1000" data-aos-easing="linear">
+              <img
+                src="images/laptop.svg"
+                alt=""
+                width="80%"
+                class="laptop"
+                data-aos="fade-left"
+                data-aos-duration="600"
+                data-aos-easing="linear"
+              >
+              <img
+                src="images/Group 339 1.svg"
+                alt=""
+                width="30%"
+                class="phone"
+                data-aos="fade-left"
+                data-aos-duration="1000"
+                data-aos-easing="linear"
+              >
             </div>
           </div>
-
         </div>
       </div>
 
       <div class="fifthpage">
-        <div class="fifthpage-first"  data-aos="zoom-out-down" data-aos-duration="800">
-
-          <div class="circle"> <img src="" alt=""></div>
-          <div style="  text-align: center;"> <h2>Mohammad Sharifi</h2></div>
-          <div style="  text-align: center;"><h3>Manager</h3></div>
-
+        <div
+          class="fifthpage-first"
+          data-aos="zoom-out-down"
+          data-aos-duration="800"
+        >
+          <div class="circle"><img src="" alt="" ></div>
+          <div style="text-align: center"><h2>Mohammad Sharifi</h2></div>
+          <div style="text-align: center"><h3>Manager</h3></div>
         </div>
-        <div class="fifthpage-second"  data-aos="zoom-out-down" data-aos-duration="1000">
-
-          <div class="circle"> <img src="" alt=""></div>
-          <div style="  text-align: center;"> <h2>Mohammad Sharifi</h2></div>
-          <div style="  text-align: center;"><h3>Manager</h3></div>
-
+        <div
+          class="fifthpage-second"
+          data-aos="zoom-out-down"
+          data-aos-duration="1000"
+        >
+          <div class="circle"><img src="" alt="" ></div>
+          <div style="text-align: center"><h2>Mohammad Sharifi</h2></div>
+          <div style="text-align: center"><h3>Manager</h3></div>
         </div>
-        <div class="fifthpage-third"  data-aos="zoom-out-down" data-aos-duration="1200">
-
-          <div class="circle"> <img src="" alt=""></div>
-          <div  style="  text-align: center;"> <h2>Mohammad Sharifi</h2> </div>
-          <div style="  text-align: center;"> <h3>Manager</h3></div>
-
+        <div
+          class="fifthpage-third"
+          data-aos="zoom-out-down"
+          data-aos-duration="1200"
+        >
+          <div class="circle"><img src="" alt="" ></div>
+          <div style="text-align: center"><h2>Mohammad Sharifi</h2></div>
+          <div style="text-align: center"><h3>Manager</h3></div>
         </div>
       </div>
       <div class="sixthpage" id="Section6">
-
         <div class="sixthpage-first">
           <h1>Contact Us</h1>
         </div>
         <div class="sixthpage-second">
           <div class="sixthpage-icons">
             <div>
-              <img src="images/phone.svg" alt="">
+              <img src="images/phone.svg" alt="" >
             </div>
             <div>
-              <img src="images/email.svg" alt="">
+              <img src="images/email.svg" alt="" >
             </div>
           </div>
           <div class="sixthpage-items">
             <div>
-          <a href="tel:778-927-4878">778 927 4878</a>
+              <a href="tel:778-927-4878">778 927 4878</a>
             </div>
             <div>
               <a href=""></a>
@@ -219,21 +270,18 @@ $(document).ready(function(){
         </div>
         <div class="location">
           <div class="location1">
-            <img src="images/location.svg" alt="" width="25">
+            <img src="images/location.svg" alt="" width="25" >
           </div>
           <div class="location2">
-            <h3>1516 whitebark place,  Coquitlam</h3>
+            <h3>1516 whitebark place, Coquitlam</h3>
           </div>
         </div>
-        <div class="form-part">
-
-
-        </div>
+        <div class="form-part"></div>
         <div class="lastone">
           <div class="lastonecenterpart">
             <div class="lastonefirstpart">
               <div class="medall-icon">
-                <img src="images/medal.svg" alt="Medall-icon" width="60">
+                <img src="images/medal.svg" alt="Medall-icon" width="60" >
               </div>
               <div class="medall">
                 <a href="">
@@ -264,7 +312,7 @@ $(document).ready(function(){
               </div>
               <div class="blacktwitter">
                 <a href="">
-                 <img src="images/blacktwitter.svg" alt="" width="30">
+                  <img src="images/blacktwitter.svg" alt="" width="30">
                 </a>
               </div>
               <div class="blackinstagram">
@@ -275,7 +323,6 @@ $(document).ready(function(){
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </body>
