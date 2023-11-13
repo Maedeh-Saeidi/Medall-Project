@@ -567,7 +567,7 @@ box-shadow: 3px 3px 50px gray;
   padding-top: 13%;
   padding-right: 15%;
 }
-.button-fourth button {
+.button-fourth a {
   border-radius: 0.5rem;
   background-color: #9e9e9e;
   color: #ffffff;
