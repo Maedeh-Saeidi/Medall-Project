@@ -114,35 +114,6 @@ li {
 box-shadow: 3px 3px 50px gray;
   transition: all 1.5s;
 } */
-@media screen and (max-width: 480px) {
-  .container {
-    display: flex;
-    flex-direction: column;
-  }
-  .first {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-
-  }
-  .first-title {
-    height: 30vh;
-  }
-  .first-title h1 {
-    font-size: 75px;
-    padding-top: 4rem;
-    padding-right: 5rem;
-    padding-left: 2rem;
-    letter-spacing: 10px;
-  }
-  .first-title h2 {
-    padding-right: 5rem;
-    padding-left: 1rem;
-  }
-  .first-undertitle {
-height: 70vh;
-  }
-}
 .second {
   height: 100vh;
   flex: 45%;
@@ -216,6 +187,85 @@ height: 70vh;
   font-size: 18px;
   color: #f3f3f3;
   padding-left: 9%;
+}
+@media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .first {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+
+  }
+  .first-title {
+    height: 30vh;
+  }
+  .first-title h1 {
+    font-size: 75px;
+    padding-top: 3rem;
+    /* padding-right: 5rem;
+    padding-left: 2rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 10px;
+  }
+  .first-title h2 {
+    padding-right: 5rem;
+    padding-left: 2rem;
+  }
+  .first-undertitle {
+height: 80vh;
+background-size: 120% 60%;
+background-repeat: no-repeat;
+  background-position: 40% 50%;
+  }
+  .list {
+    padding-top: 1rem;
+    padding-left: 0rem;
+  }
+  .list ul{
+    gap: 1.5rem;
+  }
+  .icons {
+    padding-top: 25rem;
+    padding-left: 1rem;
+  }
+  .second{
+    height: 100vh;
+  }
+  .red{
+    height: 65vh;
+  }
+  .red h2 {
+    width: 10%;
+    font-size: 32px;
+    padding-bottom: 5rem;
+    padding-left: 1.5rem;
+  }
+  .gray{
+    height: 35vh;
+    background-size: 130% 95%;
+    background-repeat: no-repeat;
+  background-position: 50% 100%;
+  }
+  .whitenotwo {
+    height: 40vh;
+  }
+  .whitenotwo img{
+    padding-top: 2rem;
+    width: 100%;
+  height: 80%;
+  }
+  .lightgray{
+    height: 60vh;
+  }
+  .lightgray h1 {
+    font-size: 32px;
+  }
+
 }
 .secondpage {
   height: 100vh;
