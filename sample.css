@@ -8,6 +8,14 @@ html {
 body {
   background-color: #f3f3f3;
 }
+@media screen and (min-width: 1000px) {
+  #home-section-medicall-and-all {
+    flex: 55%;
+  }
+  #home-section-container {
+    flex: 45%;
+  }
+}
 #flex-container {
   display: flex;
   flex-direction: column;
@@ -15,10 +23,9 @@ body {
 #home-section {
   display: flex;
   flex-direction: row;
-  height: 100vh;
 }
 #home-section-medicall-and-all {
-  flex: 55%;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #f3f3f3;
@@ -30,17 +37,18 @@ body {
   background-color: #f3f3f3;
   justify-content: center;
   align-items: flex-start;
-  padding-left: 3rem;
 }
 #medall-title h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 120px;
   color: #a82429;
   letter-spacing: 20px;
+  padding-left: 3rem;
 }
 #medall-title h2 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 33px;
+  padding-left: 3rem;
   font-weight: 80;
   color: #000000;
 }
@@ -83,9 +91,8 @@ body {
   background-color: #ffffff;
   color: #171717;
 }
-
 #home-section-container {
-  flex: 45%;
+  height: 100vh;
   background-color: #f3f3f3;
   display: flex;
   flex-direction: row;
@@ -102,7 +109,7 @@ body {
   align-items: flex-end;
   justify-content: center;
 }
-#content-1-text h1{
+#content-1-text h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #f3f3f3;
   font-size: 33px;
@@ -132,11 +139,70 @@ body {
   align-items: flex-end;
   justify-content: center;
 }
-#content-2-text h1{
+#content-2-text h1 {
   font-family: Arial, Helvetica, sans-serif;
   color: #f3f3f3;
-  font-size: 38px;
+  font-size: 35px;
   padding-bottom: 3rem;
   padding-left: 1rem;
 }
-
+@media screen and (max-width: 480px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  #home-section {
+    display: flex;
+    flex-direction: column;
+  }
+  #medall-title h1 {
+    font-size: 60px;
+    padding-left: 1rem;
+  }
+  #medall-title h2 {
+    padding-left: 1rem;
+    padding-bottom: 3rem;
+  }
+  #medall-image {
+    background-image: url(images/medallfirstimg.png);
+    background-size: 100% 70%;
+  }
+  #content-1 {
+    flex: 50%;
+  }
+  #content-1 {
+    flex: 50%;
+  }
+  #content-1-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #content-2-text {
+    justify-content: flex-end;
+    align-items: flex-end;
+  }
+  #content-1-text h1 {
+    font-size: 35px;
+    padding-left: 0.5rem;
+    padding-top: 2rem;
+    line-height: 1.5;
+  }
+  #content-2-text h1 {
+    font-size: 35px;
+    line-height: 1.5;
+  }
+  #content-1-img {
+    background-image: url(images/newmedicaldevice.png);
+    background-size: 100% 85%;
+    background-position: 100% 100%;
+    background-color: #353535;
+  }
+  #content-2-img {
+    background-image: url(images/red.jpg);
+    background-color: #fafafa;
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    background-position: 100%;
+  }
+}
