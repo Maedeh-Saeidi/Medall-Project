@@ -201,8 +201,30 @@ body {
   #content-2-img {
     background-image: url(images/red.jpg);
     background-color: #fafafa;
-    background-repeat: no-repeat;
     background-size: 100% 60%;
     background-position: 100%;
   }
+}
+#what-is-medall-section{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(images/redborder.png);
+  background-repeat: no-repeat;
+  background-position: 60% 50%;
+  background-size: 80% 50%;
+}
+.texts{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+#what-is-medall-section h1{
+  padding-bottom: 6rem;
+  padding-left: 7rem;
+}
+#what-is-medall-section p{
+  padding-bottom: 7rem;
+  width: 80%;
+  padding-left: 7rem;
 }
