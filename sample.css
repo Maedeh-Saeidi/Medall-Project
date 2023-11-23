@@ -613,25 +613,52 @@ flex-direction: column;
       text-decoration: none;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
     @media screen and (max-width: 480px){
+      #lets-collaborate-section{
+        display: flex;
+        flex-direction: column;
+      }
       #lets-collaborate-contact-information{
         height: 100vh;
       }
       #lets-collaborate-white-sidebar{
-        height: 25vh;
+        height: 30vh;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
       }
+      #sidebar-social-icons{
+        justify-content: flex-end;
+        padding-right: 1rem;
+      }
+      #sidebar-sitemaps{
+        padding-left: 0;
+        flex-wrap: wrap;
+        padding-left: 3rem;
+        padding-top: 1rem;
+        width: 80%;
+      }
+      #lets-collaborate-inner-div{
+        flex-direction: column;
+      }
+      #website-information{
+        flex: 65%;
+      }
+      #email-message-form{
+        flex: 35%;
+        padding-right: 1rem;
+        padding-top: 0;
+      }
+      #phone-email-loc-icons{
+        padding-bottom: 0;
+      }
+      #phone-email-loc-info{
+        padding-bottom: 0;
+      }
+      #lets-collaborate-title h1{
+        padding-left: 2rem;
+        padding-top: 0;
+      }
+
     }
   
