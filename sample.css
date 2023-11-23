@@ -463,7 +463,6 @@ flex-direction: column;
       width: 130px; 
       height: 130px;
       border-radius: 50%;
-
     }
     .three-circles-screen-texts{
       font-family: Arial, Helvetica, sans-serif;
@@ -503,7 +502,34 @@ flex-direction: column;
     }
     #email-message-form{
       flex: 50%;
-      background-color: antiquewhite;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10rem;
+    }
+    input[type=email], input[type=text]{
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #ffffff;
+      background-color: #a82429;
+      box-sizing: border-box;
+      margin: 10px 0px;
+      color: #ffffff;
+      font-size: 15px;
+      transition: width 0.4s ease-in-out;
+      padding: 2px 30px;
+    }
+    input[type=submit]{
+      background-color: #ffffff;
+      border: none;
+      border-radius: 6px;
+      color: black;
+      font-size: 20px;
+      text-decoration: none;
+      cursor: pointer;
+      width:100% ;
+      padding: 0.5rem;
+      margin-top: 2rem;
     }
     #lets-collaborate-title{
       flex: 40%;
@@ -526,6 +552,7 @@ flex-direction: column;
       justify-content: center;
     }
     #phone-email-loc-icons{
+      padding-bottom: 2rem;
       flex: 16%;
       height: 100%;
       display: flex;
@@ -535,6 +562,7 @@ flex-direction: column;
       align-items: flex-end;
     }
     #phone-email-loc-info{
+      padding-bottom: 2rem;
       flex: 84%;
       height: 100%;
       display: flex;
@@ -550,13 +578,6 @@ flex-direction: column;
       font-family: Arial, Helvetica, sans-serif;
       font-size: 20px;
     }
-
-
-
-
-
-
-
     #lets-collaborate-white-sidebar{
       width: 100%;
       height: 10vh;
