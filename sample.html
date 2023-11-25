@@ -281,9 +281,7 @@
                   value="Send Message"
                   onclick="postToMedal()"
                 />
-
-                <div id="snackbar">Your message has been sent successfully.</div>
-
+                <div id="snackbar"></div>
               </form>
             </div>
           </div>
@@ -330,10 +328,18 @@
     </div>
   </body>
   <script>
-    function postToMedal(event) {
+    function responseToast(message, isError){
       var x = document.getElementById("snackbar");
+      if (isError){
+        x.style.color= "#a82429";
+      }else {
+        x.style.color= "#16d381";
+      }
       x.className = "show";
+      x.innerText = message;
       setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+    } 
+    function postToMedal(event) {
       const formData = new FormData(document.getElementById("myForm"));
       const jsonData = {};
       formData.forEach((value, key) => {
@@ -350,6 +356,11 @@
       })
         .then((response) => response.json())
         .then((data) => {
+          if(data.statusCode==201){
+            responseToast("Your message has been sent successfully.", false);
+          } else{
+            responseToast(data?.message, true);
+          }
           console.log(data);
         })
         .catch((error) => {
