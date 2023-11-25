@@ -148,7 +148,7 @@ body {
 }
 @media screen and (max-width: 480px) {
   html,
-  body {
+  body{
     overflow-x: hidden;
   }
   #home-section {
@@ -612,7 +612,6 @@ flex-direction: column;
     #sidebar-sitemaps a{
       text-decoration: none;
     }
-
     @media screen and (max-width: 480px){
       #lets-collaborate-section{
         display: flex;
@@ -659,6 +658,5 @@ flex-direction: column;
         padding-left: 2rem;
         padding-top: 0;
       }
-
     }
   

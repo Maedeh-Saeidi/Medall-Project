@@ -7,13 +7,18 @@
     <title>MEDALL</title>
     <link rel="stylesheet" href="sample.css" />
     <link rel="icon" type="image/x-icon" href="./images/medall-icon.svg" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </head>
   <body>
+    <script>
+      AOS.init();
+    </script>
     <div id="flex-container">
       <div id="home-section">
         <div id="home-section-medicall-and-all">
           <div id="medall-title">
-            <h1>MEDALL</h1>
+            <h1 data-aos="fade-right" data-aos-duration="1200"> MEDALL</h1>
             <h2>Medicall and all</h2>
           </div>
           <div id="medall-image">
@@ -87,7 +92,8 @@
           <div class="how-titles"><h2>3 simple steps</h2></div>
         </div>
         <div id="how-it-works-rectangles">
-          <div class="how-rectangles">
+          <div class="how-rectangles" data-aos="zoom-out-down"
+          data-aos-duration="800">
             <div class="how-rectangles-text">
               <h2>
                 Create <br />
@@ -98,7 +104,8 @@
               <img src="images/1.svg" alt="Create an account" />
             </div>
           </div>
-          <div class="how-rectangles">
+          <div class="how-rectangles" data-aos="zoom-out-down"
+          data-aos-duration="1000">
             <div class="how-rectangles-text">
               <h2>
                 Search or Create <br />
@@ -109,7 +116,8 @@
               <img src="images/2.svg" alt="Search or create" />
             </div>
           </div>
-          <div class="how-rectangles">
+          <div class="how-rectangles" data-aos="zoom-out-down"
+          data-aos-duration="1200">
             <div class="how-rectangles-text" class="how-rectangles-text-third">
               <h2>
                 Sell or <br />
@@ -137,16 +145,22 @@
           </div>
           <div id="laptop-and-phone-part">
             <div class="laptop-div">
-              <img src="images/laptopwithnewscreen.png" alt="laptop" />
+              <img src="images/laptopwithnewscreen.png" alt="laptop" data-aos="fade-left"
+              data-aos-duration="600"
+              data-aos-easing="linear" />
             </div>
             <div class="phone-div">
-              <img src="images/cellphone1.svg" alt="Cell-phone" />
+              <img src="images/cellphone1.svg" alt="Cell-phone"   data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-easing="linear" />
             </div>
           </div>
         </div>
       </div>
       <div id="three-circles-screen">
-        <div class="container">
+        <div class="container" class="fifthpage-first"
+        data-aos="zoom-out-down"
+        data-aos-duration="800">
           <div class="img-circle-shaped">
             <img src="" alt="" />
           </div>
@@ -157,7 +171,9 @@
             <h2 class="three-circles-screen-texts">Manager</h2>
           </div>
         </div>
-        <div class="container">
+        <div class="container" class="fifthpage-second"
+        data-aos="zoom-out-down"
+        data-aos-duration="1000">
           <div class="img-circle-shaped">
             <img src="" alt="" />
           </div>
@@ -168,7 +184,9 @@
             <h2  class="three-circles-screen-texts">Manager</h2>
           </div>
         </div>
-        <div class="container">
+        <div class="container" class="fifthpage-third"
+        data-aos="zoom-out-down"
+        data-aos-duration="1200">
           <div class="img-circle-shaped">
             <img src="" alt="" />
           </div>
